@@ -15,6 +15,16 @@ public class Main {
         double d = 6;
         System.out.println("Значение переменной d с типом double равно " + d + ".");
 
+        float f1 = 27.12f;
+        long l1 = 987678965549L;
+        byte b1 = 2;
+        short s1 = 786;
+        boolean boo1 = false;
+        short s2 = 569;
+        short s3 = -159;
+        int i1 = 27897;
+        byte b2 = 67;
+
 
     }
 }
