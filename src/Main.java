@@ -35,6 +35,18 @@ public class Main {
         float sheetPerPupil = sheetsOfPaperNumber / pupilsNumber;
         System.out.println("На каждого ученика расчитано " + sheetPerPupil + " листов бумаги.");
 
-
+        System.out.println();
+        float productPerMinute = 16 / 2;
+        int productPerHour = (int) (productPerMinute * 60);
+        int productPerDay = productPerHour * 24;
+        int productPerMonth = (int) (productPerDay * 30.5);
+        System.out.println("Производительность машины по производству бутылок - "
+                + (int) (productPerMinute) + " бутылок в минуту.");
+        System.out.println("За 20 минут машина произвела "
+                + (int) (productPerMinute * 20) + " бутылок.");
+        System.out.println("За сутки машина произвела "
+                + productPerDay + " бутылок.");
+        System.out.println("За месяц машина произвела "
+                + productPerMonth + " бутылок.");
     }
 }
