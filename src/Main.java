@@ -25,6 +25,16 @@ public class Main {
         int i1 = 27897;
         byte b2 = 67;
 
+        System.out.println();
+        byte lpPupil = 23;
+        byte asPupil = 27;
+        byte eaPupil = 30;
+        int pupilsNumber = lpPupil + asPupil + eaPupil;
+        short sheetsOfPaperNumber = 480;
+        System.out.println("Всего учеников: " + pupilsNumber);
+        float sheetPerPupil = sheetsOfPaperNumber / pupilsNumber;
+        System.out.println("На каждого ученика расчитано " + sheetPerPupil + " листов бумаги.");
+
 
     }
 }
