@@ -57,5 +57,14 @@ public class Main {
         System.out.println("В школе, где " + classNumber + " классов, нужно "
                 + classNumber * consumptionOfWhite + " банок белой и "
                 + classNumber * consumptionOfBrown + " банок коричневой краски.");
+
+        System.out.println();
+        byte bananaWeight = 80;
+        float milkWeight = 105 / 100;
+        byte icecreamWeight = 100;
+        byte eggsWeight = 70;
+        float breakfastWeight = (bananaWeight * 5 + milkWeight * 200 + icecreamWeight * 2
+                + eggsWeight * 4) / 1000;
+        System.out.println("Вес завтрака спортсмена - " + breakfastWeight + " кг.");
     }
 }
