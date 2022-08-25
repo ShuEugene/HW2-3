@@ -66,5 +66,14 @@ public class Main {
         float breakfastWeight = (bananaWeight * 5 + milkWeight * 200 + icecreamWeight * 2
                 + eggsWeight * 4) / 1000;
         System.out.println("Вес завтрака спортсмена - " + breakfastWeight + " кг.");
+
+        System.out.println();
+        byte weightToLose = 7;
+        short weightLose1 = 250;
+        short weightLose2 = 500;
+        System.out.println("Чтобы \"сбросить\" " + weightToLose + " кг, спортсмену понадобиться "
+                + weightToLose * 1000 / weightLose1 + " дней, " +
+                "если он будет \"сбрасывать\" по 250 г в день, и "
+                + weightToLose * 1000 / weightLose2 + " дней - если по 500.");
     }
 }
