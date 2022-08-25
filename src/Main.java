@@ -48,5 +48,14 @@ public class Main {
                 + productPerDay + " бутылок.");
         System.out.println("За месяц машина произвела "
                 + productPerMonth + " бутылок.");
+
+        System.out.println();
+        byte canOfPaint = 120;
+        byte consumptionOfWhite = 2;
+        byte consumptionOfBrown = 4;
+        byte classNumber = (byte) (120 / (consumptionOfWhite + consumptionOfBrown));
+        System.out.println("В школе, где " + classNumber + " классов, нужно "
+                + classNumber * consumptionOfWhite + " банок белой и "
+                + classNumber * consumptionOfBrown + " банок коричневой краски.");
     }
 }
