@@ -15,6 +15,7 @@ public class Main {
         double d = 6;
         System.out.println("Значение переменной d с типом double равно " + d + ".");
 
+        /*
         float f1 = 27.12f;
         long l1 = 987678965549L;
         byte b1 = 2;
@@ -24,6 +25,7 @@ public class Main {
         short s3 = -159;
         int i1 = 27897;
         byte b2 = 67;
+        */
 
         System.out.println();
         byte lpPupil = 23;
@@ -36,7 +38,7 @@ public class Main {
         System.out.println("На каждого ученика расчитано " + sheetPerPupil + " листов бумаги.");
 
         System.out.println();
-        float productPerMinute = 16 / 2;
+        float productPerMinute = 16.0f / 2;
         int productPerHour = (int) (productPerMinute * 60);
         int productPerDay = productPerHour * 24;
         int productPerMonth = (int) (productPerDay * 30.5);
@@ -53,7 +55,7 @@ public class Main {
         byte canOfPaint = 120;
         byte consumptionOfWhite = 2;
         byte consumptionOfBrown = 4;
-        byte classNumber = (byte) (120 / (consumptionOfWhite + consumptionOfBrown));
+        byte classNumber = (byte) (canOfPaint / (consumptionOfWhite + consumptionOfBrown));
         System.out.println("В школе, где " + classNumber + " классов, нужно "
                 + classNumber * consumptionOfWhite + " банок белой и "
                 + classNumber * consumptionOfBrown + " банок коричневой краски.");
@@ -77,10 +79,24 @@ public class Main {
                 + (weightToLose / weightLose2) + " дней - если по 500.");
         short averageLose = (short) ((weightLose1 + weightLose2) / 2);
         byte dayToAverageLose = (byte) ((weightToLose / averageLose) -
-                        (weightToLose % averageLose));
+                (weightToLose % averageLose));
         System.out.println("Если же он будет сбрасывать от " + weightLose1 + " до "
                 + weightLose2 + " г в день, в среднем на \"сбрасывание\" веса уйдёт около "
-                + dayToAverageLose + " дня (день/дней).");
+                + dayToAverageLose + " дней (день/дня).");
 
+        System.out.println();
+        float marieInitialSalary = 67760f;
+        float denInitialSalary = 83690f;
+        float kristineInitialSalary = 76230f;
+        byte salaryRisePercent = 10;
+        float marieIncreaseSalary = marieInitialSalary + (marieInitialSalary * salaryRisePercent / 100);
+        float denInsreaseSalary = denInitialSalary + (denInitialSalary * salaryRisePercent / 100);
+        float kristineIncreaseSalary = kristineInitialSalary + (kristineInitialSalary * salaryRisePercent / 100);
+        System.out.println("Маша теперь получает " + marieIncreaseSalary + " рублей."
+        + " Годовой доход вырос на " + (marieIncreaseSalary * 12 - marieInitialSalary * 12) + " рублей.");
+        System.out.println("Денис теперь получает " + denInsreaseSalary + " рублей."
+        + " Годовой доход вырос на " + (denInsreaseSalary * 12 - denInitialSalary * 12) + " рублей.");
+        System.out.println("Кристина теперь получает " + kristineIncreaseSalary + " рублей."
+        + " Годовой доход вырос на " + (kristineIncreaseSalary * 12 - kristineInitialSalary * 12) + " рублей.");
     }
 }
