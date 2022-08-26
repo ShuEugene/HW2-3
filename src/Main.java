@@ -34,7 +34,7 @@ public class Main {
         int pupilsNumber = lpPupil + asPupil + eaPupil;
         short sheetsOfPaperNumber = 480;
         System.out.println("Всего учеников: " + pupilsNumber);
-        float sheetPerPupil = sheetsOfPaperNumber / pupilsNumber;
+        float sheetPerPupil = (float) (sheetsOfPaperNumber / pupilsNumber);
         System.out.println("На каждого ученика расчитано " + sheetPerPupil + " листов бумаги.");
 
         System.out.println();
@@ -62,7 +62,7 @@ public class Main {
 
         System.out.println();
         byte bananaWeight = 80;
-        float milkWeight = 105 / 100;
+        float milkWeight = (float) (105 / 100);
         byte icecreamWeight = 100;
         byte eggsWeight = 70;
         float breakfastWeight = (bananaWeight * 5 + milkWeight * 200 + icecreamWeight * 2
